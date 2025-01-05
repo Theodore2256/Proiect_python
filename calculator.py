@@ -7,7 +7,7 @@ root = Tk()
 root.title("Scientific Calculator")
 root.configure(background = 'white')
 root.resizable(width=True, height=(False))
-root.geometry("450x500+450+90")
+root.geometry("480x568+450+90")
 calc = Frame(root)
 calc.grid()
 
