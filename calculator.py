@@ -1,7 +1,7 @@
 from tkinter import *
 import math
 import tkinter.messagebox
-import tkmacosx as ttk
+
 
 root = Tk()
 root.title("Scientific Calculator")
