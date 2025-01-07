@@ -126,7 +126,51 @@ Fiecare metodă:
 Utilizează txtDisplay pentru a interacționa cu interfața utilizatorului.
 Este gândită să fie modulară, facilitând extinderea calculatorului cu alte funcții.
 
+Acest fișier are nevoie de un  modul pentru a funcționa (Tkinter).
+Pentru a face lucrurile mai ușoare, poți crea un mediu virtual (venv) pe calculatorul tău în folderul unde se află fișierul Python, fișierul data.csv și folderul care conține modulele.
+Poți crea acest mediu virtual rulând următoarele comenzi în terminal:
 
+Pentru Windows:
+
+
+Aceasta va crea un folder pentru mediul virtual:
+ 
+         
+    python -m venv your_name_for_the_venv  
+         
+Pentru a activa mediul virtual, trebuie să rulezi această comandă:
+         
+                  your_name_for_the_venv\Scripts\activate.bat
+                  
+                  
+Apoi, pentru a instala Tkinter, rulează această comandă:
+        
+            pip install TK
+            
+             
+for mac/linux:
+
+Creează mediul virtual rulând comanda:
+
+        python3 -m venv your_name_for_the_venv   
+         
+                 
+Pentru a activa mediul virtual, rulează comanda:
+         
+                  source your_name_for_the_venv/bin/activate  
+                  
+                  
+Apoi, pentru a instala Tkinter, rulează comanda:
+        
+            pip install Tk 
+
+           
+Rulare:
+
+
+Pentru a rula codul, execută această comandă în terminal/cmd:
+
+                  python calculator.py          
 
 
 ------------------------------Referinte---------------------------------------
