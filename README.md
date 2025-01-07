@@ -130,6 +130,7 @@ Este gândită să fie modulară, facilitând extinderea calculatorului cu alte 
 
 
 ------------------------------Referinte---------------------------------------
+
 https://docs.python.org/3/library/math.html
 https://www.geeksforgeeks.org/python-math-module/
 https://www.youtube.com/watch?v=EkYrfV7M1ks
