@@ -173,67 +173,109 @@ Pentru a rula codul, execută această comandă în terminal/cmd:
         python calculator.py          
 
 
------------------------------codu meu--------------------------------------
+-----------------------------codul meu--------------------------------------
 
 6. Gestionarea interfeței utilizatorului
 
 Interfața aplicației este implementată cu ajutorul widgeturilor din biblioteca tkinter. Aceasta include:
-	1.	Afișajul principal (Entry):
-	•	txtDisplay este un câmp de tip Entry, utilizat pentru a afișa valorile curente și rezultatele operațiilor.
-	•	Este configurat să afișeze text alb pe fundal negru, cu un font de tip Helvetica bold, pentru o vizibilitate ridicată.
-	2.	Butonieră:
-	•	Numere (0-9):
+
+1. Afișajul principal (Entry):
+
+txtDisplay este un câmp de tip Entry, utilizat pentru a afișa valorile curente și rezultatele operațiilor.
+
+Este configurat să afișeze text alb pe fundal negru, cu un font de tip Helvetica bold, pentru o vizibilitate ridicată.
+
+2. Butonieră:
+
+Numere (0-9):
+
 Tastele numerice sunt create dinamic folosind un șablon iterativ (bucle for) pentru a popula grila de butoane.
-	•	Fiecare buton numeric apelează metoda numberEnter din clasa Calc.
-	•	Operații matematice:
-Butoane pentru adunare, scădere, înmulțire, împărțire, modul, și egal (=) sunt asociate cu metodele corespunzătoare:
-	•	operation – pentru a seta operația curentă.
-	•	sum_of_total – pentru a calcula rezultatul operației.
-	•	Ștergere și resetare:
-	•	C (Clear): Resetează valoarea curentă (Clear_Entry).
-	•	CE (Clear Entry): Resetează întreaga stare a calculatorului (All_Clear_Entry).
-	•	Funcții suplimentare:
+
+Fiecare buton numeric apelează metoda numberEnter din clasa Calc.
+
+Operații matematice:
+
+Butoane pentru adunare, scădere, îmulțire, împărțire, modul, și egal (=) sunt asociate cu metodele corespunzătoare:
+
+operation – pentru a seta operația curentă.
+
+sum_of_total – pentru a calcula rezultatul operației.
+
+Ștergere și resetare:
+
+C (Clear): Resetează valoarea curentă (Clear_Entry).
+
+CE (Clear Entry): Resetează întreaga stare a calculatorului (All_Clear_Entry).
+
+Funcții suplimentare:
+
 Butoanele pentru funcții avansate (de exemplu, sin, cos, tan, log, sqrt) sunt asociate direct cu metodele corespunzătoare din clasa Calc.
-	3.	Aranjarea interfeței:
-	•	Layout-ul este organizat sub formă de grilă (grid()), fiecare rând și coloană fiind asociate cu un buton sau grup de funcții:
-	•	Rândurile 1-5: Elemente de bază (numere, operații aritmetice).
-	•	Rândurile 6-7: Funcții științifice (constante, trigonometrie, logaritmi).
+
+3. Aranjarea interfeței:
+
+Layout-ul este organizat sub formă de grilă (grid()), fiecare rând și coloană fiind asociate cu un buton sau grup de funcții:
+
+Rândurile 1-5: Elemente de bază (numere, operații aritmetice).
+
+Rândurile 6-7: Funcții științifice (constante, trigonometrie, logaritmi).
 
 7. Configurarea aplicației
-	1.	Dimensiune și poziționare:
-	•	Dimensiunile inițiale ale aplicației sunt setate la 480x568 pixeli.
-	•	Fereastra este poziționată în centrul ecranului (450+90).
-	2.	Culoare și design:
-	•	Fundalul aplicației este alb, iar culorile butoanelor sunt diferite pentru funcții de bază (negru, albastru deschis) și avansate (alb-negru), pentru a îmbunătăți experiența utilizatorului.
-	3.	Caracteristici suplimentare:
-	•	Aplicația permite redimensionarea lățimii, dar blochează redimensionarea pe înălțime (resizable(width=True, height=False)).
+
+1. Dimensiune și poziționare:
+
+Dimensiunile inițiale ale aplicației sunt setate la 480x568 pixeli.
+
+Fereastra este poziționată în centrul ecranului (450+90).
+
+2. Culoare și design:
+
+Fundalul aplicației este alb, iar culorile butoanelor sunt diferite pentru funcții de bază (negru, albastru deschis) și avansate (alb-negru), pentru a îmbunătăți experiența utilizatorului.
+
+3. Caracteristici suplimentare:
+
+Aplicația permite redimensionarea lățimii, dar blochează redimensionarea pe înălțime (resizable(width=True, height=False)).
 
 8. Extindere și personalizare
 
 Codul este conceput modular, ceea ce permite adăugarea ușoară de noi funcții:
-	•	Adăugarea de noi constante:
-	•	Poți crea o metodă nouă similară cu pi sau tau pentru a afișa o constantă personalizată.
-	•	Adăugarea de funcții noi:
-	•	Creează o metodă nouă în clasa Calc care să implementeze o funcție matematică dorită (de exemplu, calcularea procentului) și asociaz-o unui buton nou în interfață.
-	•	Personalizarea interfeței:
-	•	Poți schimba dimensiunile sau culorile butoanelor, adăugând și imagini de fundal pentru un design mai atractiv.
+
+Adăugarea de noi constante:
+
+Poți crea o metodă nouă similară cu pi sau tau pentru a afișa o constantă personalizată.
+
+Adăugarea de funcții noi:
+
+Creează o metodă nouă în clasa Calc care să implementeze o funcție matematică dorită (de exemplu, calcularea procentului) și asociaz-o unui buton nou în interfață.
+
+Personalizarea interfeței:
+
+Poți schimba dimensiunile sau culorile butoanelor, adăugând și imagini de fundal pentru un design mai atractiv.
 
 9. Limitări și considerații
-	1.	Gestionarea erorilor:
-	•	În cazurile în care se introduc valori nevalide (cum ar fi împărțirea la zero sau logaritmarea unui număr negativ), aplicația va genera o eroare. Pentru a gestiona aceste situații, se poate utiliza un bloc try-except în metodele relevante.
-	2.	Redimensionare:
-	•	Deși aplicația permite redimensionarea pe lățime, elementele UI pot deveni nealiniate dacă sunt modificate dimensiunile excesiv.
-	3.	Suport pentru tastatură:
-	•	Momentan, calculatorul funcționează doar prin butoanele din interfață. Extinderea pentru a permite utilizarea tastaturii fizice ar necesita asocierea unor evenimente bind cu tastele.
+
+1. Gestionarea erorilor:
+
+În cazurile în care se introduc valori nevalide (cum ar fi împărțirea la zero sau logaritmarea unui număr negativ), aplicația va genera o eroare. Pentru a gestiona aceste situații, se poate utiliza un bloc try-except în metodele relevante.
+
+2. Redimensionare:
+
+Deși aplicația permite redimensionarea pe lățime, elementele UI pot deveni nealiniate dacă sunt modificate dimensiunile excesiv.
+
+3. Suport pentru tastatură:
+
+Momentan, calculatorul funcționează doar prin butoanele din interfață. Extinderea pentru a permite utilizarea tastaturii fizice ar necesita asocierea unor evenimente bind cu tastele.
 
 10. Concluzii
 
 Acest cod oferă un calculator științific robust și extensibil, capabil să efectueze operații de bază și avansate. Utilizând biblioteca tkinter, interfața este simplă și intuitivă, iar structura modulară a clasei Calc permite personalizarea și extinderea rapidă a funcționalităților.
 
 Pentru îmbunătățiri viitoare, se pot adăuga funcții precum:
-	•	Salvarea istoricului operațiilor.
-	•	Funcții grafice (trasează grafice pentru funcții introduse).
-	•	Modul de conversie între unități.
+
+Salvarea istoricului operațiilor.
+
+Funcții grafice (trasează grafice pentru funcții introduse).
+
+Modul de conversie între unități.
 
 ------------------------------Referinte---------------------------------------
 
