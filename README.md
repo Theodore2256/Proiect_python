@@ -1,6 +1,6 @@
 Acest cod implementează o aplicație de calculator științific utilizând biblioteca tkinter pentru interfața grafică în Python. Este structurat în principal în jurul unei clase Calc, care definește funcționalitatea calculatorului, și a unui obiect Tk care definește fereastra aplicației.
 
-Prezentare Generală
+##*Prezentare Generală*
 
 Clasa Calc:
 Este nucleul funcționalității calculatorului, responsabil pentru gestionarea intrărilor, operațiilor matematice și afișarea rezultatelor.
