@@ -320,7 +320,10 @@ https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/
 https://medium.com/@nishithakalathil/simple-calculator-using-tkinter-c917e26a759c
 
 https://www.studytonight.com/tkinter/calculator-application-using-tkinter
+>bloc try-except
 
 https://www.w3schools.com/python/python_try_except.asp
+
 >bind
+
 https://www.youtube.com/watch?v=HG56gc-T20Q&ab_channel=AlanDMooreCodes
