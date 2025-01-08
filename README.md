@@ -322,3 +322,5 @@ https://medium.com/@nishithakalathil/simple-calculator-using-tkinter-c917e26a759
 https://www.studytonight.com/tkinter/calculator-application-using-tkinter
 
 https://www.w3schools.com/python/python_try_except.asp
+>bind
+https://www.youtube.com/watch?v=HG56gc-T20Q&ab_channel=AlanDMooreCodes
