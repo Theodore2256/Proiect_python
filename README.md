@@ -303,10 +303,17 @@ Pentru îmbunătățiri viitoare, se pot adăuga funcții precum:
 -------------------------------------------Referinte---------------------------------------------------
 
 https://docs.python.org/3/library/math.html
+
 https://www.geeksforgeeks.org/python-math-module/
+
 https://www.youtube.com/watch?v=EkYrfV7M1ks
+
 https://www.studytonight.com/tkinter/calculator-application-using-tkinter
+
 https://www.youtube.com/watch?v=owbU6WzIhhg
+
 https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/
+
 https://medium.com/@nishithakalathil/simple-calculator-using-tkinter-c917e26a759c
+
 https://www.studytonight.com/tkinter/calculator-application-using-tkinter
